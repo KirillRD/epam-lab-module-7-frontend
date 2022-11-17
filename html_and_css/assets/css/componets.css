@@ -1,0 +1,152 @@
+.button {
+    background-color: #3AAFA9;
+    color: #DEF2F1;
+
+    padding: 8px 16px;
+    margin: 4px 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    box-shadow: 0 0 8px silver;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    transition-duration: 200ms;
+}
+
+.button:hover {
+    background-color: #2B7A78;
+    box-shadow: 0 0 8px gray;
+}
+
+.button:active {
+    transform: translateY(2px);
+    transition: 100ms;
+}
+
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    background-color: #FEFFFF;
+    color: #17252A;
+
+    padding: 4px 8px;
+    margin: 4px;
+
+    border: 1px solid;
+    border-color: #3AAFA9;
+    border-radius: 4px;
+
+    box-shadow: 0 0 4px silver;
+
+    transition-duration: 200ms;
+}
+
+.input:hover {
+    border-color: #2B7A78;
+    box-shadow: 0 0 4px gray;
+}
+
+.input:focus {
+    border-color: #2B7A78;
+    box-shadow: 0 0 4px gray;
+    
+    outline: solid;
+    outline-color: #2B7A78;
+    outline-width: 1px;
+}
+
+.input::placeholder {
+    color: #DEF2F1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.select:focus option:checked {
+    background: linear-gradient(#3AAFA9 0%, #3AAFA9 100%);
+}
+
+
+.label {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    color: #17252A;
+
+    text-decoration: none;
+    text-decoration-color: #2B7A78;
+
+    transition-duration: 200ms;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: #2B7A78;
+    text-decoration-thickness: 1px;
+
+    color: #2B7A78;
+}
+
+.link:active {
+    transform: translateY(3px);
+    transition: 100ms;
+}
+
+
+.textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    background-color: #FEFFFF;
+    color: #17252A;
+
+    padding: 4px 8px;
+    margin: 4px;
+
+    border: 1px solid;
+    border-color: #3AAFA9;
+    border-radius: 4px;
+
+    box-shadow: 0 0 4px silver;
+
+    transition-duration: 200ms;
+}
+
+.textarea:hover {
+    border-color: #2B7A78;
+    box-shadow: 0 0 4px gray;
+}
+
+.textarea:focus {
+    border-color: #2B7A78;
+    box-shadow: 0 0 4px gray;
+    
+    outline: solid;
+    outline-color: #2B7A78;
+    outline-width: 1px;
+}
+
+.textarea::placeholder {
+    color: #DEF2F1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}

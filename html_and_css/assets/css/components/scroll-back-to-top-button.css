@@ -1,0 +1,41 @@
+#scroll-back-to-top-button {
+    background-color: #3AAFA9;
+    color: #DEF2F1;
+
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 4px;
+
+    border: none;
+    border-radius: 8px;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+    box-shadow: 0 0 8px silver;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    transition-duration: 200ms;
+
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+}
+
+#scroll-back-to-top-button:hover {
+    background-color: #2B7A78;
+    box-shadow: 0 0 8px gray;
+}
+
+#scroll-back-to-top-button:active {
+    transform: translateY(2px);
+    transition: 100ms;
+}

@@ -1,0 +1,101 @@
+.nav {
+    display: flex;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32px;
+    padding-top: 8px;
+}
+
+.nav-link-margin-right {
+    margin-right: auto !important;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    color: #DEF2F1;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    text-decoration-thickness: 1.5px;
+
+    transition-duration: 300ms;
+
+    margin-right: 8px;
+    margin-left: 8px;
+
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 1.5px;
+
+    color: white;
+}
+
+.nav-menu {
+    color: #DEF2F1;
+
+    cursor:pointer;
+
+    transition-duration: 300ms;
+}
+
+.nav-menu:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #17252A;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #3AAFA9;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #DEF2F1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

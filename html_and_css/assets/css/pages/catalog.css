@@ -1,0 +1,173 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #DEF2F1;
+
+    width: 600px;
+
+    padding: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    border: 2px #3AAFA9 solid;
+    border-radius: 8px;
+}
+
+.filter-half {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.filter-third {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.filter-quarter {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.filter-search {
+    width: 90%;
+}
+
+
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 14px;
+
+    height: 384px;
+    flex: 0 0 21.84%;
+
+    margin: 8px;
+    padding: 8px;
+
+    background-color: #DEF2F1;
+
+    border: 2px solid;
+    border-color: #3AAFA9;
+    border-radius: 16px;
+
+    transition-duration: 200ms;
+}
+
+.catalog-item:hover {
+    border-color: #2B7A78;
+    box-shadow: 0 0 4px gray;
+}
+
+.catalog-item-up {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.catalog-item-name {
+    font-weight: bold;
+    color: #17252A;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0);
+    text-decoration-thickness: 1.5px;
+
+    transition-duration: 300ms;
+}
+
+.catalog-item-name:hover {
+    text-decoration: underline;
+    text-decoration-color: #2B7A78;
+    text-decoration-thickness: 1.5px;
+
+    color: #2B7A78;
+}
+
+.catalog-item-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+.catalog-item-tags {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.catalog-item-down {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+
+    margin-left: 6px;
+}
+
+.loader {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.loader.show {
+    opacity: 1;
+}
+
+.loader div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #2B7A78;
+    animation: loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loader div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+}
+
+.loader div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+}
+
+.loader div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+}
+
+@keyframes loader {
+    0% {
+        top: 8px;
+        height: 64px;
+    }
+
+    50%,
+    100% {
+        top: 24px;
+        height: 32px;
+    }
+}
